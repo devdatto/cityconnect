@@ -4,6 +4,7 @@
  The data is loaded at startup from an input file
  
 ## Data file format
+```
  Portland,Seattle
  Portland,San Francisco
  Seattle,Vancouver
@@ -11,6 +12,7 @@
  Los Angeles,San Diego
  Spokane,Bellevue
  Bend,Eugene
+```
  
 ## API details 
 The connectivity between two cities is checked by making a GET call to the end-point /connected and passing two parameters - origin and destination
