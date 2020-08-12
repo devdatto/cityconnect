@@ -106,6 +106,29 @@ public class ApiCallIT {
 		assertThat(response.getStatusCode(), is(HttpStatus.NOT_FOUND));
 	}
 	
+	@Test
+	public void testCityConnectivityFalseWithHTTPStatusBadRequest() throws JSONException {
+		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
+
+		ResponseEntity<String> response = restTemplate.exchange(
+				getUrl("/connected?origin=Portland&destination="),
+				HttpMethod.GET, entity, String.class);
+
+		String expected = 
+				"{" + 
+				"    \"error\": {" + 
+				"        \"errorMessage\": \"Destination parameter blank.\"," + 
+				"        \"errorCode\": 400,\r\n" + 
+				"        \"errorClassName\": \"com.devdatto.sandbox.cityconnect.exception.BadRequestException\"," + 
+				"        \"errorDescriptionUrl\": \"ERR010:BAD_REQUEST\"" + 
+				"    }," + 
+				"    \"hasErrorResponse\": true" + 
+				"}";
+
+		JSONAssert.assertEquals(expected, response.getBody(), false);
+		assertThat(response.getStatusCode(), is(HttpStatus.BAD_REQUEST));
+	}
+	
 	String getUrl(String uri) {
 		return BASE_URL + this.port + uri;
 	}
