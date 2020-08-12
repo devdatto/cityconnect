@@ -1,7 +1,7 @@
 # cityconnect
  Project for Spring Boot to check if two cities are connected by road
  
- The data is loaded at startus from an input file
+ The data is loaded at startup from an input file
  
 ## Data file format
  Portland,Seattle
