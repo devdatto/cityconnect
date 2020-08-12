@@ -1,0 +1,17 @@
+Portland,Seattle
+Portland,San Francisco
+Seattle,Vancouver
+San Francisco,Los Angeles
+Los Angeles,San Diego
+Spokane,Bellevue
+Bend,Eugene
+Redmond,Bellevue
+Beaverton,Portland
+Beaverton,Hillsboro
+Gresham,Bend
+Oakland,San Francisco
+Oakland,Sacramento
+Carlsbad,Encinitas
+Thousand Oaks,Santa Barbara
+Thousand Oaks,Santa Monica
+Santa Monica, Laguna Beach
