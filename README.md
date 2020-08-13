@@ -25,3 +25,6 @@ The connectivity between two cities is checked by making a GET call to the end-p
 ```
 http://localhost:8080/swagger-ui.html
 ```
+
+## Monitoring performance
+To use JAMon, change the logging level to TRACE in logback configuration
