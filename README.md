@@ -15,7 +15,8 @@
 ```
  
 ## API details 
-The connectivity between two cities is checked by making a GET call to the end-point /connected and passing two parameters - origin and destination
+The connectivity between two cities is checked by making a GET call to the end-point /connected 
+and passing two parameters - origin and destination.
 The two cities might be directly connected or there can be multiple hops between them
 ### Sample API calls
 ```
