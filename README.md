@@ -17,6 +17,11 @@
 ## API details 
 The connectivity between two cities is checked by making a GET call to the end-point /connected and passing two parameters - origin and destination
 ### Sample API calls
+```
 1. localhost:8080/connected?origin=Boston&destination=Philadelphia
 2. localhost:8080/connected?origin=Portland&destination=Seattle
-
+```
+## Swagger 
+```
+http://localhost:8080/swagger-ui.html
+```
