@@ -33,3 +33,6 @@ To use JAMon, change the logging level to TRACE in logback configuration
 
 ## Performance testing
 Use Jmeter with the .jmx file and the test data under the ./performance directory
+
+## Unit test coverage
+jacoco-report/index.html is generated as part of the build under the ./target directory.
