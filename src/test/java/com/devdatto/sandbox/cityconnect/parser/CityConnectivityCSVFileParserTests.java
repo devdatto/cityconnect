@@ -64,17 +64,23 @@ public class CityConnectivityCSVFileParserTests {
 	public void testParseRecordLineFirstFieldBlank() {
 		Optional<CityPath> optCityPath = parser.parseRecord(",Ipsum");
 		assertFalse(optCityPath.isPresent());
+		optCityPath = parser.parseRecord(" ,Ipsum");
+		assertFalse(optCityPath.isPresent());
 	}
 	
 	@Test
 	public void testParseRecordLineSecondFieldBlank() {
 		Optional<CityPath> optCityPath = parser.parseRecord("Lorem,");
 		assertFalse(optCityPath.isPresent());
+		optCityPath = parser.parseRecord("Lorem, ");
+		assertFalse(optCityPath.isPresent());
 	}
 	
 	@Test
 	public void testParseRecordLineBothFieldsBlank() {
 		Optional<CityPath> optCityPath = parser.parseRecord(",");
+		assertFalse(optCityPath.isPresent());
+		optCityPath = parser.parseRecord(" , ");
 		assertFalse(optCityPath.isPresent());
 	}
 	
