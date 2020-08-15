@@ -118,7 +118,7 @@ public class ApiCallIT {
 				"{" + 
 				"    \"error\": {" + 
 				"        \"errorMessage\": \"Destination parameter blank.\"," + 
-				"        \"errorCode\": 400,\r\n" + 
+				"        \"errorCode\": 400," + 
 				"        \"errorClassName\": \"com.devdatto.sandbox.cityconnect.exception.BadRequestException\"," + 
 				"        \"errorDescriptionUrl\": \"ERR010:BAD_REQUEST\"" + 
 				"    }," + 
